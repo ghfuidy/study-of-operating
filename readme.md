@@ -1,14 +1,18 @@
 -----------
-the use of git(first try)
+# the use of git(first try)
 -----------
 
 在网络上搜索教程将本地git仓库与github仓库关联
 .git文件中可以看见远程仓库
 
 ----------
-文件上传过程
+## 文件上传过程
 git add xxx
 git commit -m""
+
+合并操作 git commit -a -m ""
+
+------------
 git push #推送到github上
 （第一次推送过程
 git push -u origin master    失败  报错：
@@ -33,8 +37,8 @@ git push --set-upstream origin master
 ~~~~~~~~~~~~
 ）
 
-思考题：云端与本地文件完全不同，且属于第一次上传，如何将本地文件加入云端
-（采用先下载在上传的方式
+## 思考：云端与本地文件完全不同，且属于第一次上传，如何将本地文件加入云端
+（采用先下载在上传的方式)
 push前先将远程repository修改pull下来
 
 $ git pull origin master
@@ -66,3 +70,8 @@ remote: http://github.com/settings/emails
 To https://github.com/ghfuidy/study-of-operating.git
  ! [remote rejected] first-practice -> first-practice (push declined due to email privacy restrictions)
 error: failed to push some refs to 'https://github.com/ghfuidy/study-of-operating.git'
+
+邮箱私有导致出错
+
+## tips:
+重装系统可能导致需要重新配置ssh-key
